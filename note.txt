@@ -1,0 +1,10 @@
+;; This buffer is for notes you don't want to save, and for Lisp evaluation.
+;; If you want to create a file, visit that file with C-x C-f,
+;; then enter the text in that file's own buffer.
+
+1、git 中文文件名 乱码 mac
+　　git 默认中文文件名是 xx%
+　　是因为 对0x80以上的字符进行quote
+　　只需要
+　　git config core.quotepath false
+　　core.quotepath设为false的话，就不会对0x80以上的字符进行quote。中文显示正常
